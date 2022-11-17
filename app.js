@@ -4,12 +4,25 @@ const moma = document.querySelector("#moma-left");
 const tate = document.querySelector("#tate-right");
 const scissor = document.querySelector("#big-scissor");
 const line = document.querySelector("#dott-line");
-const sectionOne = document.querySelector(".section-intro");
-const seections = document.querySelectorAll("section");
+
+const textl = document.querySelector("#textl");
+const textr = document.querySelector("#textr");
+
+const sectionOne = document.querySelector("#section-intro");
+const sectionArtwoks = document.querySelector("#artworks1");
+const sectionArtists = document.querySelector("#artists1");
+const sectionAcquisition = document.querySelector("#acquisition1");
+const sectionCombo = document.querySelector("#combine");
+const sectionGenderGap = document.querySelector("#gendergap");
+const sectionNat = document.querySelector("#nationality");
+const sectionCallForAction = document.querySelector("#cfa");
+
+
+const sections = document.querySelectorAll("section");
 
 const sectionOneOptions = {
     root: null,
-    threshold: 0,
+    threshold: 0.25,
     rootMargin: "-150px"
 };
 

@@ -21,7 +21,7 @@ section {
     position: relative;
   }
  
-.section-intro {
+#section-intro {
     background-color: black !important;
 }
 
@@ -37,8 +37,8 @@ section {
 
 .tiny-scissor {
     top: -22% !important;
-    left: 35.6% !important;
-    transform: scale(0.24) translate(-35.6%, -22%) !important;
+    left: 35.08% !important;
+    transform: scale(0.2) translate(-35.08%, -22%) !important;
     transition: all 1.25s ease;
     filter: invert(0) !important;
 }
@@ -98,7 +98,7 @@ section {
     filter: blur(0) !important;
 }
 
-.text-left {
+#text-left {
     position: absolute;
     width: 30%;
     top: 35%;
@@ -106,7 +106,7 @@ section {
     transform: translate(-10%, -35%);
 }
 
-.text-right {
+#text-right {
     position: absolute;
     text-align: right;
     width: 30%;
