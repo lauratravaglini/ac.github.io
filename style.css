@@ -9,6 +9,7 @@ body {
     background-color: white ;
     color: black;
     font-family: 'Sono', sans-serif;
+    font-size: 20px;
   }
 
 
@@ -20,45 +21,65 @@ section {
     position: relative;
   }
  
-#s1 {
+.section-intro {
     background-color: black !important;
 }
 
-#big-scissor-white {
+#big-scissor {
     width: 500px;
     height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
+    filter: invert(1);
 }
 
-#big-scissor{
-    width: 120px;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+.tiny-scissor {
+    top: -22% !important;
+    left: 35.6% !important;
+    transform: scale(0.24) translate(-35.6%, -22%) !important;
+    transition: all 1.25s ease;
+    filter: invert(0) !important;
 }
 
-#moma-left, #moma-left-white {
+#moma-left {
     width: 200px;
     height: auto;
     top: 75%;
     left: 35%;
     transform: translate(-35%, -75%);
-    position: absolute;
+    position: fixed; /* da cambiare in fixed che poi sparirà opacity:0 */
+    filter: invert(1);
 }
 
-#tate-right, #tate-right-white {
+.moma-animated {
+    width: 150px !important; 
+    top: 5% !important;
+    left: 20% !important;
+    transform: rotate(60deg) translate(-20%, -5%) !important;
+    filter: invert(0) !important;
+    transition: all 1.25s ease;
+}
+
+#tate-right {
     width: 210px;
     height: auto;
     top: 75%;
     left: 66%;
     transform: translate(-66%, -75%);
-    position: absolute;
+    position: fixed;
+    filter: invert(1);
 }
+
+.tate-animated {
+    width: 150px !important;
+    top: -13% !important;
+    left: 75% !important;
+    transform: rotate(300deg) translate(-75%, -13%) !important;
+    filter: invert(0) !important;
+    transition: all 1.25s ease;
+} 
 
 #dott-line {
     width: 5px;
@@ -66,17 +87,31 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
+    opacity: 0;
+    filter: blur(4px);
 }
 
+.dott-line-animated {
+    opacity: 1 !important;
+    transition: all 1.25s ease;
+    filter: blur(0) !important;
+}
 
-#dott-line-white {
-    width: 500px;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text-left {
     position: absolute;
-    opacity: 0;
+    width: 30%;
+    top: 35%;
+    left: 10%;
+    transform: translate(-10%, -35%);
+}
+
+.text-right {
+    position: absolute;
+    text-align: right;
+    width: 30%;
+    top: 35%;
+    left: 90%;
+    transform: translate(-90%, -35%);
 
 }
