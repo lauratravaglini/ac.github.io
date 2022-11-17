@@ -17,7 +17,6 @@ const sectionGenderGap = document.querySelector("#gendergap");
 const sectionNat = document.querySelector("#nationality");
 const sectionCallForAction = document.querySelector("#cfa");
 
-
 const sections = document.querySelectorAll("section");
 
 const sectionOneOptions = {
@@ -46,3 +45,24 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
   
 sectionOneObserver.observe(sectionOne);
+
+const sectionArtworksOptions = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "-150px"
+};
+
+const sectionArtwoksObserver = new IntersectionObserver(function(
+    entries,
+    sectionArtwoksObserver) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            scissor.classList.toggle("tiny-scissor-after");
+        } else {
+            scissor.classList.remove("tiny-scissor-after");
+        }
+    });
+}, 
+sectionArtwoksOptions);
+  
+sectionArtwoksObserver.observe(sectionArtwoks);
