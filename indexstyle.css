@@ -96,6 +96,12 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+#homepage {
+    background-image: url("./img/homepage.gif");
+    background-size: cover;
+    background-position-y: center;
+}
+
 
 body {
     color: white;
