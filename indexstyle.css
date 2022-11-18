@@ -54,7 +54,7 @@ nav ul {
         -ms-flex: 1;
             flex: 1;
     list-style: none;
-  }
+}
 
 
 
@@ -96,16 +96,6 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-h2 {
-    font-family: 'Noto Serif Display', serif;
-    font-weight: 800;
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 body {
     color: white;
@@ -121,3 +111,81 @@ p {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 800;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    transform: translate(-17%, -25%);
+}
+
+#description {
+    position: absolute;
+    width: 70%;
+    top: 65% !important;
+    left: 50% !important;
+    transform: translate(-50%, -65%) !important;
+}
+
+#description p {
+    position: relative;
+    text-align: left !important;
+}
+
+.team {
+    display: block;
+    width: 80%;
+    margin-left: 11%;
+    align-content:space-between;
+    position: relative;
+    top: 10%;
+}
+  
+.person {
+    display:inline-block;
+    width: 25%;
+    height: 75%;
+    margin-right: 40px;
+    position: relative;
+    top: 0;
+    border: dotted white;
+    padding: 2%;
+  }
+
+
+.name {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 22px;
+  font-weight: 800;
+  margin:0;
+  text-align: right;
+}
+
+  .description {
+  font-family: 'Sono', sans-serif;
+  font-size: 14px;
+  margin-top:10px;
+  margin-bottom:15px;
+  line-height: 1.6;
+  
+  }
+
+.role {
+  font-family: 'Sono', sans-serif;
+  font-size: 12px;
+  margin:0;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.scissor img {
+    position: absolute;
+    left: -30%;
+    top: -10%;
+    z-index: 2;
+    height: 300px;
+    width: auto;
+}
