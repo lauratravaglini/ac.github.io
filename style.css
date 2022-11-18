@@ -109,17 +109,35 @@ section {
 #text-left {
     position: absolute;
     width: 30%;
-    top: 35%;
+    top: 80%;
     left: 10%;
-    transform: translate(-10%, -35%);
+    transform: translate(-10%, -80%);
+    filter: blur(4px);
+    opacity: 0;
 }
 
 #text-right {
     position: absolute;
     text-align: right;
     width: 30%;
-    top: 35%;
+    top: 80%;
     left: 90%;
-    transform: translate(-90%, -35%);
+    transform: translate(-90%, -80%);
+    filter: blur(4px);
+    transform: translateX(-100%, -100%);
+    opacity: 0;
+}
 
+.text-animated {
+    filter: blur(0) !important;
+    opacity: 1 !important;
+    transform: translateX(0, 0) !important;
+    transition: all 2s ease-in;
+}
+
+.hidden {
+    opacity: 0 !important;
+    filter: blur(4px) !important;
+    transform: translateX(-100%, -100%) !important;
+    transition: all 1.5s ease-out;
 }

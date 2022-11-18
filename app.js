@@ -5,10 +5,11 @@ const tate = document.querySelector("#tate-right");
 const scissor = document.querySelector("#big-scissor");
 const line = document.querySelector("#dott-line");
 
-const textl = document.querySelector("#textl");
-const textr = document.querySelector("#textr");
+const textl = document.querySelector("#text-left");
+const textr = document.querySelector("#text-right");
 
-const sectionOne = document.querySelector("#section-intro");
+const sectionIntro = document.querySelector("#section-intro");
+const sectionOne = document.querySelector("#section1");
 const sectionArtwoks = document.querySelector("#artworks1");
 const sectionArtists = document.querySelector("#artists1");
 const sectionAcquisition = document.querySelector("#acquisition1");
@@ -18,6 +19,39 @@ const sectionNat = document.querySelector("#nationality");
 const sectionCallForAction = document.querySelector("#cfa");
 
 const sections = document.querySelectorAll("section");
+
+const sectionIntroOptions = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "-150px"
+};
+
+const sectionIntroObserver = new IntersectionObserver(function(
+    entries,
+    sectionOneObserver) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            moma.classList.toggle("moma-animated");
+            tate.classList.toggle("tate-animated");
+            scissor.classList.toggle("tiny-scissor");
+            line.classList.toggle("dott-line-animated");
+            textl.classList.toggle("text-animated");
+            textr.classList.toggle("text-animated");
+            
+        } else {
+            moma.classList.remove("moma-animated");
+            tate.classList.remove("tate-animated");
+            scissor.classList.remove("tiny-scissor");
+            line.classList.remove("dott-line-animated");
+            textl.classList.remove("text-animated");
+            textr.classList.remove("text-animated");
+        }
+    });
+}, 
+sectionIntroOptions);
+  
+sectionIntroObserver.observe(sectionIntro);
+
 
 const sectionOneOptions = {
     root: null,
@@ -34,17 +68,26 @@ const sectionOneObserver = new IntersectionObserver(function(
             tate.classList.toggle("tate-animated");
             scissor.classList.toggle("tiny-scissor");
             line.classList.toggle("dott-line-animated");
+            textl.classList.toggle("text-animated");
+            textr.classList.toggle("text-animated");
+            
         } else {
             moma.classList.remove("moma-animated");
             tate.classList.remove("tate-animated");
             scissor.classList.remove("tiny-scissor");
             line.classList.remove("dott-line-animated");
+            textl.classList.remove("text-animated");
+            textr.classList.remove("text-animated");
         }
     });
 }, 
 sectionOneOptions);
   
 sectionOneObserver.observe(sectionOne);
+
+
+
+/*
 
 const sectionArtworksOptions = {
     root: null,
@@ -65,4 +108,4 @@ const sectionArtwoksObserver = new IntersectionObserver(function(
 }, 
 sectionArtwoksOptions);
   
-sectionArtwoksObserver.observe(sectionArtwoks);
+sectionArtwoksObserver.observe(sectionArtwoks);*/
