@@ -84,7 +84,6 @@ sectionTwoOptions);
 sectionTwoObserver.observe(sectionTwo);
 
 
-
 /*
 
 const sectionArtworksOptions = {

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* Style Nav */
+a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10%;
+}
+
+a:hover {
+    display: inline;
+    background: linear-gradient(90deg, white 50%, transparent 0) 0 1.35em/10px 2px repeat-x;
+    text-shadow: 0.03em 0 black, -0.03em 0 black;
+}
+
+.nav-container {
+    background: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+nav {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 3rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    list-style: none;
+  }
+
+
+
+.logo {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+        flex: 3;
+    position: relative;
+    filter: invert(1);
+}
+
+/* Style Body */
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-color: black;
+    position: relative;
+}
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    color: white;
+    font-family: 'Sono', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+}
+
