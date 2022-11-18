@@ -5,8 +5,10 @@ const tate = document.querySelector("#tate-right");
 const scissor = document.querySelector("#big-scissor");
 const line = document.querySelector("#dott-line");
 
-const textl = document.querySelector("#text-left");
-const textr = document.querySelector("#text-right");
+const secId0 = document.querySelector("#s-introduction");
+
+const textl = document.querySelector("#moma-intro");
+const textr = document.querySelector("#tate-intro");
 
 const sectionIntro = document.querySelector("#section-intro");
 
@@ -38,6 +40,7 @@ const sectionIntroObserver = new IntersectionObserver(function(
             tate.classList.toggle("tate-animated");
             scissor.classList.toggle("tiny-scissor");
             line.classList.toggle("dott-line-animated");
+            secId0.classList.toggle("show");
             textl.classList.toggle("text-animated");
             textr.classList.toggle("text-animated");
             
@@ -46,6 +49,7 @@ const sectionIntroObserver = new IntersectionObserver(function(
             tate.classList.remove("tate-animated");
             scissor.classList.remove("tiny-scissor");
             line.classList.remove("dott-line-animated");
+            secId0.classList.remove("show");
             textl.classList.remove("text-animated");
             textr.classList.remove("text-animated");
         }
@@ -110,13 +114,11 @@ sectionArtwoksObserver.observe(sectionArtwoks);*/
 // PC for visitors
 
 new PureCounter({
-    // Setting that can't' be overriden on pre-element
     selector: ".pc1", // HTML query selector for spesific element
   
-    // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
     end: 1160686, // End number [uint]
-    duration: 1, // The time in seconds for the animation to complete [seconds]
+    duration: 3.5, // The time in seconds for the animation to complete [seconds]
     delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: true, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
@@ -128,14 +130,12 @@ new PureCounter({
     separator: false, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
   });
   
-  new PureCounter({
-    // Setting that can't' be overriden on pre-element
+new PureCounter({
     selector: ".pc2", // HTML query selector for spesific element
   
-    // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
     end: 1156037, // End number [uint]
-    duration: 1, // The time in seconds for the animation to complete [seconds]
+    duration: 3.5, // The time in seconds for the animation to complete [seconds]
     delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: true, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
@@ -145,7 +145,7 @@ new PureCounter({
     currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
     formater: "us-US", // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
     separator: false, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
-  });
+});
 
   // PC for artworks
 
@@ -155,8 +155,8 @@ new PureCounter({
   
     // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
-    end: 1160686, // End number [uint]
-    duration: 1, // The time in seconds for the animation to complete [seconds]
+    end: 140848, // End number [uint]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
     delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: true, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
@@ -174,8 +174,8 @@ new PureCounter({
   
     // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
-    end: 1156037, // End number [uint]
-    duration: 1, // The time in seconds for the animation to complete [seconds]
+    end: 69201, // End number [uint]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
     delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: true, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]

@@ -9,9 +9,16 @@ body {
     background-color: white ;
     color: black;
     font-family: 'Sono', sans-serif;
-    font-size: 20px;
-  }
+    font-size: 24px;
+}
 
+p {
+    margin-bottom: 5%;
+}
+
+.purecounter {
+    font-size: 40px !important;
+}
 
 section {
     display: grid;
@@ -19,7 +26,7 @@ section {
     align-content: center;
     min-height: 100vh;
     position: relative;
-  }
+}
  
 #section-intro {
     background-color: black !important;
@@ -106,24 +113,24 @@ section {
     filter: blur(0) !important;
 }
 
-#text-left {
+#moma-intro {
     position: absolute;
-    width: 30%;
-    top: 120%;
+    width: 35%;
+    top: 230%;
     left: 10%;
-    transform: translate(-10%, -120%);
+    transform: translate(-10%, -230%);
     transform: translateX(-100%, -100%);
     filter: blur(4px);
     opacity: 0;
 }
 
-#text-right {
+#tate-intro {
     position: absolute;
     text-align: right;
-    width: 30%;
-    top: 120%;
+    width: 35%;
+    top: 230%;
     left: 90%;
-    transform: translate(-90%, -120%);
+    transform: translate(-90%, -230%);
     filter: blur(4px);
     transform: translateX(-100%, -100%);
     opacity: 0;
@@ -133,7 +140,7 @@ section {
     filter: blur(0) !important;
     opacity: 1 !important;
     transform: translateX(0, 0) !important;
-    transition: all 2s ease-in;
+    transition: all 2.5s ease-in;
 }
 
 .hidden {
@@ -143,10 +150,50 @@ section {
     transform: scaleY(-100%) !important;
 }
 
-
-.hidden-text {
-    opacity: 0 !important;
-    filter: blur(4px) !important;
-    transition: all 1s ease-out !important;
-    transform: scaleY(-100%) !important;
+#s-introduction {
+    width: fit-content;
+    top: 95%;
+    left: 97%;
+    transform: translate(-97%, -95%);
+    position: fixed;
+    font-size: 10px;
+    opacity: 0;
+    filter: blur(4px);
 }
+
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transition: all 2.5s ease-in;
+}
+
+/* section 2 */ 
+
+#section2 {
+    opacity: 0;
+}
+
+#moma-art {
+    position: absolute;
+    width: 35%;
+    top: 230%;
+    left: 10%;
+    transform: translate(-10%, -230%);
+    transform: translateX(-100%, -100%);
+    filter: blur(4px);
+    opacity: 0;
+}
+
+#tate-art {
+    position: absolute;
+    text-align: right;
+    width: 35%;
+    top: 230%;
+    left: 90%;
+    transform: translate(-90%, -230%);
+    filter: blur(4px);
+    transform: translateX(-100%, -100%);
+    opacity: 0;
+}
+
+/* section 3 */ 
