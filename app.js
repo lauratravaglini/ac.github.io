@@ -64,20 +64,9 @@ const sectionOneObserver = new IntersectionObserver(function(
     sectionOneObserver) {
     entries.forEach(entry => {
         if(!entry.isIntersecting) {
-            moma.classList.toggle("moma-animated");
-            tate.classList.toggle("tate-animated");
-            scissor.classList.toggle("tiny-scissor");
-            line.classList.toggle("dott-line-animated");
-            textl.classList.toggle("text-animated");
-            textr.classList.toggle("text-animated");
-            
+
         } else {
-            moma.classList.remove("moma-animated");
-            tate.classList.remove("tate-animated");
-            scissor.classList.remove("tiny-scissor");
-            line.classList.remove("dott-line-animated");
-            textl.classList.remove("text-animated");
-            textr.classList.remove("text-animated");
+
         }
     });
 }, 
