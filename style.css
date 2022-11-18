@@ -39,7 +39,7 @@ section {
     top: -22% !important;
     left: 35.08% !important;
     transform: scale(0.2) translate(-35.08%, -22%) !important;
-    transition: all 1.25s ease;
+    transition: all 2s ease;
     filter: invert(0) !important;
 }
 
@@ -47,7 +47,7 @@ section {
     top: -15% !important;
     left: 35.08% !important;
     transform: scale(0.2) translate(-35.08%, -15%) !important;
-    transition: all 1.25s ease;
+    transition: all 2s ease;
     filter: invert(0) !important;
 }
 
@@ -67,7 +67,7 @@ section {
     left: 20% !important;
     transform: rotate(60deg) translate(-20%, -5%) !important;
     filter: invert(0) !important;
-    transition: all 1.25s ease;
+    transition: all 2s ease;
 }
 
 #tate-right {
@@ -86,7 +86,7 @@ section {
     left: 75% !important;
     transform: rotate(300deg) translate(-75%, -13%) !important;
     filter: invert(0) !important;
-    transition: all 1.25s ease;
+    transition: all 2s ease;
 } 
 
 #dott-line {
@@ -109,9 +109,10 @@ section {
 #text-left {
     position: absolute;
     width: 30%;
-    top: 80%;
+    top: 120%;
     left: 10%;
-    transform: translate(-10%, -80%);
+    transform: translate(-10%, -120%);
+    transform: translateX(-100%, -100%);
     filter: blur(4px);
     opacity: 0;
 }
@@ -120,9 +121,9 @@ section {
     position: absolute;
     text-align: right;
     width: 30%;
-    top: 80%;
+    top: 120%;
     left: 90%;
-    transform: translate(-90%, -80%);
+    transform: translate(-90%, -120%);
     filter: blur(4px);
     transform: translateX(-100%, -100%);
     opacity: 0;
@@ -138,6 +139,14 @@ section {
 .hidden {
     opacity: 0 !important;
     filter: blur(4px) !important;
-    transform: translateX(-100%, -100%) !important;
-    transition: all 1.5s ease-out;
+    transition: all 1s ease-out !important;
+    transform: scaleY(-100%) !important;
+}
+
+
+.hidden-text {
+    opacity: 0 !important;
+    filter: blur(4px) !important;
+    transition: all 1s ease-out !important;
+    transform: scaleY(-100%) !important;
 }
