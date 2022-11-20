@@ -30,7 +30,98 @@ section {
     align-content: center;
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: start;
 }
+
+
+.slide {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   height: 100%; */
+    height: calc(100vh - var(--scrollbar-height));
+    min-width: 100vw;
+    scroll-snap-align: start;
+}
+
+
+#slider {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+}
+
+.slide-text {
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+}
+
+#first {
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+}
+
+
+#arrow {
+    content: url(./img/futarrow.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatex(0px);
+    animation: float 2s ease-in-out infinite;
+    position: absolute;
+    left: 105%;
+    bottom: 10%;
+}
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-10px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+#arrow2 {
+    content: url(./img/futarrow2.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float2 2s ease-in-out infinite;
+    position: absolute;
+    left: 90%;
+    top: 85%;
+}
+
+
+/* Section-intro */
  
 #section-intro {
     background-color: black !important;
@@ -44,6 +135,7 @@ section {
     transform: translate(-50%, -50%);
     position: fixed;
     filter: invert(1);
+    opacity: 1;
 }
 
 .tiny-scissor {
@@ -70,6 +162,7 @@ section {
     transform: translate(-35%, -75%);
     position: fixed; /* da cambiare in fixed che poi sparirà opacity:0 */
     filter: invert(1);
+    opacity: 1;
 }
 
 .moma-animated {
@@ -79,6 +172,7 @@ section {
     transform: rotate(60deg) translate(-20%, -5%) !important;
     filter: invert(0) !important;
     transition: all 2s ease;
+    opacity: 1;
 }
 
 #tate-right {
@@ -89,6 +183,7 @@ section {
     transform: translate(-66%, -75%);
     position: fixed;
     filter: invert(1);
+    opacity: 1;
 }
 
 .tate-animated {
@@ -98,6 +193,7 @@ section {
     transform: rotate(300deg) translate(-75%, -13%) !important;
     filter: invert(0) !important;
     transition: all 2s ease;
+    opacity: 1;
 } 
 
 #dott-line {
@@ -163,6 +259,12 @@ section {
     font-size: 10px;
     opacity: 0;
     filter: blur(4px);
+}
+
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transition: all 2.5s ease-in;
 }
 
 .show {

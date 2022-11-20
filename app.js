@@ -25,6 +25,7 @@ const sectionCallForAction = document.querySelector("#cfa");
 
 const sections = document.querySelectorAll("section");
 
+
 const sectionIntroOptions = {
     root: null,
     threshold: 0.25,
