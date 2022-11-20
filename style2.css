@@ -169,7 +169,9 @@ section {
     padding-top: 5%;
 }
 
-#section3, #section4 {
+#section3, #section4, #section5, #section6, #section7, #section8, 
+#section9, #section10, #section11, #section12, #section13, #section14, 
+#section15, #section16, #section17, #section18, #section19 {
     background-image: url(./img/bg2.png);
     background-repeat: no-repeat;
     background-position-x: center;
