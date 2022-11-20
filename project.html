@@ -17,14 +17,19 @@
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
+
+    <!--preloader-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 </head>
 <body>
-    
+
     <div id="slider">
     <section class="slide">
             <div class="slide-text">
                 <a href="#next-slide"><div id="arrow"></div></a>
-            </div>         
+            </div>   
+              
     </section>
     <section id="next-slide" class="slide">
             <div id="first" class="slide-text">
@@ -89,7 +94,7 @@
                 Let's pick two you may already heard about, or even visited.  <br/>
                 The Museum of Modern Art/MoMa (New York, USA) and the Tate Modern (London, UK).</p>
         </div>
-        <div id="arrow2"></div>
+        <a href="#section-intro"><div id="arrow2"></div></a>
     </section>
 
     </div>
@@ -105,31 +110,30 @@
 
     <section id="section1">
         <div id="moma-intro"> <!-- Descrzione musei + counter visitatori -->
-            <p>The <b>Museum of Modern Art (MoMA)</b> – founded in <b>1929</b> – is an art museum located in Midtown Manhattan, New York City.</p>
-            <p>It plays a major role in developing and collecting modern art and is often identified as one of the largest and most influential museums of modern art in the world.</p> 
-            <p>Its annual visitors ammoun to:</p>
-            <p><span data-purecounter-start="0" data-purecounter-end="1160686" class="purecounter pc1">0</span></p>
+            <p id="par1">The <b>Museum of Modern Art (MoMA)</b> – founded in <b>1929</b> – is an art museum located in Midtown Manhattan, New York City.</p>
+            <p id="par2">It plays a major role in developing and collecting modern art and is often identified as one of the largest and most influential museums of modern art in the world.</p> 
+            <p id="par5">In 2021, its <b>annual visitors count</b> was:</p>
+            <p id="par6"><span data-purecounter-start="0" data-purecounter-end="1160686" class="purecounter pc1">0</span></p>
         </div>
         <div id="tate-intro">
-            <p>Part of of the british Tate group, <b>Tate Modern</b> is one of the UK’s top three tourist attractions and one of the largest museums of modern and contemporary art in the world.</p> 
-            <p>Since it opened in May <b>2000</b>, more than 40 million people have visited it.</p> 
-            <p>Its annual visitors currently ammount to: </p>
-            <p><span data-purecounter-start="0" data-purecounter-end="1156037" class="purecounter pc2">0</span></p>
+            <p id="par3">In a network of four art galleries, <b>Tate</b> is an institution that houses the UK's national collection of British art, and international modern and contemporary art.</p> 
+            <p id="par4">Since its foundation in <b>1897</b>, the complex has kept growing into one of the largest and most visited galleries in the world.</p> 
+            <p id="par7">In 2021, its <b>annual visitors count</b> was:</p>
+            <p id="par8"><span data-purecounter-start="0" data-purecounter-end="1156037" class="purecounter pc2">0</span></p>
         </div>
         <div id="s-introduction">0 / INTRODUCTION</div>
     </section>
 
     <section id="section2">
-        <div id="moma-art"> <!-- Descrzione musei + counter visitatori -->
-            <p>The <b>Museum of Modern Art (MoMA)</b> – founded in <b>1929</b> – is an art museum located in Midtown Manhattan, New York City.</p>
-            <p>It plays a major role in developing and collecting modern art and is often identified as one of the largest and most influential museums of modern art in the world.</p> 
-            <p>Its annual visitors ammoun to:</p>
-            <p><span data-purecounter-start="0" data-purecounter-end="140848" class="purecounter pc3">0</span></p>
+        <div id="moma-art"> 
+            <p id="par9">In the last century, the Moma's evolving <b>collection</b> has included an ever-expanding range of visual expression.</p>
+            <p id="par10">Currently, it amounts to:</p>
+            <p id="par11"><span data-purecounter-start="0" data-purecounter-end="140848" class="purecounter pc3">0</span></p>
         </div>
         <div id="tate-art">
-            <p>Tate Modern houses the United Kingdom's national collection of international modern and contemporary art.</p>
-            <p>Its collection currently ammount to: </p>
-            <p><span data-purecounter-start="0" data-purecounter-end="69201" class="purecounter pc4">0</span></p>
+            <p id="par12">When Tate first opened its doors to the public it had just one site, displaying a small <b>collection</b> of British artworks.</p>
+            <p id="par13">Currently, it amounts to:</p>
+            <p id="par14"><span data-purecounter-start="0" data-purecounter-end="69201" class="purecounter pc4">0</span></p>
         </div>
         <div id="s-introduction">1 / ARTWORKS</div>
     </section>
@@ -210,6 +214,7 @@
     <section id="cfa">
 
     </section>
+    </div>
 
     <script src="./purecounter_vanilla.js"></script>
     <script src="app.js"></script>

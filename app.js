@@ -25,6 +25,67 @@ const sectionCallForAction = document.querySelector("#cfa");
 
 const sections = document.querySelectorAll("section");
 
+/*
+// da intro a forbice 
+
+const slider = document.querySelector("#slider");
+
+const sliderOptions = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "-200px"
+};
+
+const sliderObserver = new IntersectionObserver(function(
+    entries,
+    sliderObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            moma.classList.toggle("hidden2");
+            tate.classList.toggle("hidden2");
+            scissor.classList.toggle("hidden2");
+        } else {
+            moma.classList.remove("hidden2");
+            tate.classList.remove("hidden2");
+            scissor.classList.remove("hidden2");
+        }
+    });
+}, 
+sliderOptions);
+  
+sliderObserver.observe(slider);
+
+const slider2Options = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "-200px"
+};
+
+const slider2Observer = new IntersectionObserver(function(
+    entries,
+    slider2Observer) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            moma.classList.toggle("show2");
+            tate.classList.toggle("show2");
+            scissor.classList.toggle("show2");
+            moma.classList.remove("moma-animated");
+            tate.classList.remove("tate-animated");
+            scissor.classList.remove("tiny-scissor");
+        } else {
+            moma.classList.remove("show2");
+            tate.classList.remove("show2");
+            scissor.classList.remove("show2");
+        }
+    });
+}, 
+slider2Options);
+  
+slider2Observer.observe(slider);
+
+*/
+
+// da forbice a prima sezione
 
 const sectionIntroOptions = {
     root: null,
@@ -60,11 +121,12 @@ sectionIntroOptions);
   
 sectionIntroObserver.observe(sectionIntro);
 
+const interlude = document.querySelector("#interlude");
 
 const sectionTwoOptions = {
     root: null,
     threshold: 0.25,
-    rootMargin: "-150px"
+    rootMargin: "-110px"
 };
 
 const sectionTwoObserver = new IntersectionObserver(function(
@@ -84,6 +146,74 @@ sectionTwoOptions);
   
 sectionTwoObserver.observe(sectionTwo);
 
+// section 3
+
+const par1 = document.querySelector("#par1");
+const par2 = document.querySelector("#par2");
+const par3 = document.querySelector("#par3");
+const par4 = document.querySelector("#par4");
+
+const momaart = document.querySelector("#moma-art");
+const tateart = document.querySelector("#tate-art");
+
+const sectionTwo2bOptions = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "-200px"
+};
+
+const sectionTwo2Observer = new IntersectionObserver(function(
+    entries,
+    sectionTwo2bObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            par1.classList.toggle("hidden");
+            par2.classList.toggle("hidden");
+            par3.classList.toggle("hidden");
+            par4.classList.toggle("hidden");
+            sectionOne.classList.toggle("people");
+            momaart.classList.toggle("text-animated");
+            tateart.classList.toggle("text-animated");
+        } else {
+            par1.classList.remove("hidden");
+            par2.classList.remove("hidden");
+            par3.classList.remove("hidden");
+            par4.classList.remove("hidden");
+            sectionOne.classList.remove("people");
+            momaart.classList.remove("text-animated");
+            tateart.classList.remove("text-animated");
+        }
+    });
+}, 
+sectionTwo2bOptions);
+  
+sectionTwo2Observer.observe(sectionTwo);
+
+
+
+const section2Options = {
+    root: null,
+    threshold: 0.25,
+    rootMargin: "200px"
+};
+
+const section2Observer = new IntersectionObserver(function(
+    entries,
+    section2Observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            momaart.classList.toggle("text-animated");
+            tateart.classList.toggle("text-animated");
+            
+        } else {
+            momaart.classList.remove("text-animated");
+            tateart.classList.remove("text-animated");
+        }
+    });
+}, 
+section2Options);
+  
+section2Observer.observe(sectionTwo);
 
 /*
 
@@ -106,7 +236,9 @@ const sectionArtwoksObserver = new IntersectionObserver(function(
 }, 
 sectionArtwoksOptions);
   
-sectionArtwoksObserver.observe(sectionArtwoks);*/
+sectionArtwoksObserver.observe(sectionArtwoks);
+
+*/
 
 
 // PureCounters 

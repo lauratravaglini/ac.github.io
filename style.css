@@ -3,7 +3,8 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  }
+}
+
 
 body {
     background-color: white ;
@@ -45,8 +46,15 @@ section {
     height: calc(100vh - var(--scrollbar-height));
     min-width: 100vw;
     scroll-snap-align: start;
+    z-index: 2;
 }
 
+#container {
+    display: flex;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
 
 #slider {
     display: flex;
@@ -246,8 +254,16 @@ section {
 .hidden {
     opacity: 0 !important;
     filter: blur(4px) !important;
+    transition: all 0.3s ease-out !important;
+    transform: scaleY(-100%) !important;
+}
+
+.hidden2 {
+    opacity: 0 !important;
+    filter: blur(4px) !important;
     transition: all 1s ease-out !important;
     transform: scaleY(-100%) !important;
+    position: absolute !important;
 }
 
 #s-introduction {
@@ -267,17 +283,26 @@ section {
     transition: all 2.5s ease-in;
 }
 
-.show {
+.show2 {
+    transform: scaleY(-100%) !important;
     opacity: 1 !important;
     filter: blur(0) !important;
     transition: all 2.5s ease-in;
+    position: fixed !important;
 }
+
+
+.people {
+    background-image: url("./img/people.png");
+    background-size: 70%;
+    background-position-y: 300px;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 
 /* section 2 */ 
-
-#section2 {
-    opacity: 0;
-}
 
 #moma-art {
     position: absolute;
