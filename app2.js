@@ -7,8 +7,8 @@ new PureCounter({
   
     start: 0, // Starting number [uint]
     end: 1160686, // End number [uint]
-    duration: 0.5, // The time in seconds for the animation to complete [seconds]
-    delay: 5, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
+    delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: false, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
     decimals: 0, // How many decimal places to show. [uint]
@@ -24,8 +24,8 @@ new PureCounter({
   
     start: 0, // Starting number [uint]
     end: 1156037, // End number [uint]
-    duration: 0.5, // The time in seconds for the animation to complete [seconds]
-    delay: 5, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
+    delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: false, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
     decimals: 0, // How many decimal places to show. [uint]
@@ -46,8 +46,8 @@ new PureCounter({
     // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
     end: 140848, // End number [uint]
-    duration: 2, // The time in seconds for the animation to complete [seconds]
-    delay: 5, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
+    delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: false, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
     decimals: 0, // How many decimal places to show. [uint]
@@ -65,8 +65,8 @@ new PureCounter({
     // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
     start: 0, // Starting number [uint]
     end: 69201, // End number [uint]
-    duration: 2, // The time in seconds for the animation to complete [seconds]
-    delay: 5, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+    duration: 3, // The time in seconds for the animation to complete [seconds]
+    delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: false, // Counting at once or recount when the element in view [boolean]
     pulse: false, // Repeat count for certain time [boolean:false|seconds]
     decimals: 0, // How many decimal places to show. [uint]

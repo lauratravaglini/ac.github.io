@@ -249,21 +249,21 @@ section {
 #sec4c, #sec5c  {
     position: relative;
     left: 2%;
-    bottom: 5%;
+    bottom: -3%;
     font-size: 65px;
 }
 
 #sec4d, #sec5d  {
     position: relative;
     left: -44%;
-    bottom: -33%;
+    bottom: -36%;
     font-size: 65px;
 }
 
 #sec4e, #sec5e {
     position: relative;
-    left: -22%;
-    bottom: -32%;
+    left: -27%;
+    bottom: -37%;
     font-size: 65px;
 }
 
