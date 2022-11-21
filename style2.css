@@ -28,8 +28,21 @@ p {
     height: 100vh;
 }
 
+#background-video {
+    position: fixed;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .slide {
-    background-color: black;
+    background-color: transparent;
     color: white;
     min-height: 100vh;
     justify-content: center;
