@@ -327,12 +327,12 @@ section {
 }
 
 #chartdiv {
-    width: 50%;
+    width: 100%;
     height: 400px
 }
 
 #map_moma {
-    width: 50%;
+    width: 100%;
     height: 400px
 }
 
