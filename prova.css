@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: white ;
+    color: black;
+    font-family: 'Sono', sans-serif;
+    font-size: 26px;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+}
+
+p {
+    margin-bottom: 5%;
+}
+
+#slider {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+}
+
+#background-video {
+    position: fixed;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.slide {
+    background-color: transparent;
+    color: white;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    align-content: center;
+    /*   height: 100%; */
+    height: calc(100vh - var(--scrollbar-height));
+    min-width: 100vw;
+    scroll-snap-align: start;
+    z-index: 2;
+    display: grid;
+    position: relative;
+}
+
+.slide-text {
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+}
+
+
+#arrow {
+    content: url(./img/futarrow.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatex(0px);
+    animation: float 2s ease-in-out infinite;
+    position: absolute;
+    left: 105%;
+    bottom: 10%;
+}
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-10px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#arrow2 {
+    content: url(./img/futarrow2.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float2 2s ease-in-out infinite;
+    position: absolute;
+    left: 90%;
+    top: 85%;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    scroll-snap-align: start;
+}
+
+#container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#section-intro {
+    background-color: black;
+}
+
+#section3, #section4, #section5, #section6, #section7, #section8, 
+#section9, #section10, #section11, #section12, #section13, #section14, 
+#section15, #section16, #section17, #section18, #section19 {
+    background-image: url(./img/bg2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 110px;
+    padding-top: 5%;
+}
+
+#section2 {
+    background-image: url(./img/ppl.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 67%;
+    padding-top: 4%;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+    filter: blur(4px);
+}
+  
+.fade-in.appear {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.from-left {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 35%;
+    height: auto;
+    left: -8%;
+    position: relative;
+  }
+  
+.from-right {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    width: 35%;
+    right: -8%;
+    text-align: right;
+    position: relative;
+  }
+  
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in, filter 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in, filter 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in, filter 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+.from-left.appear,
+.from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+
+
+#big-scissor {
+    width: 500px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    filter: invert(1);
+    opacity: 1;
+}
+
+.tiny-scissor {
+    top: -22% !important;
+    left: 35.08% !important;
+    transform: scale(0.2) translate(-35.08%, -22%) !important;
+    transition: all 2s ease;
+    filter: invert(0) !important;
+}
+
+.tiny-scissor-after {
+    top: -15% !important;
+    left: 35.08% !important;
+    transform: scale(0.2) translate(-35.08%, -15%) !important;
+    transition: all 2s ease;
+    filter: invert(0) !important;
+}
+
+#moma-left {
+    width: 200px;
+    height: auto;
+    top: 75%;
+    left: 35%;
+    transform: translate(-35%, -75%);
+    position: fixed; /* da cambiare in fixed che poi sparirà opacity:0 */
+    filter: invert(1);
+    opacity: 1;
+}
+
+.moma-animated {
+    width: 150px !important; 
+    top: 5% !important;
+    left: 20% !important;
+    transform: rotate(60deg) translate(-20%, -5%) !important;
+    filter: invert(0) !important;
+    transition: all 2s ease;
+    opacity: 1;
+}
+
+#tate-right {
+    width: 210px;
+    height: auto;
+    top: 75%;
+    left: 66%;
+    transform: translate(-66%, -75%);
+    position: fixed;
+    filter: invert(1);
+    opacity: 1;
+}
+
+.tate-animated {
+    width: 150px !important;
+    top: -13% !important;
+    left: 75% !important;
+    transform: rotate(300deg) translate(-75%, -13%) !important;
+    filter: invert(0) !important;
+    transition: all 2s ease;
+    opacity: 1;
+} 
+
+#dott-line {
+    width: 5px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.dott-line-animated {
+    opacity: 1 !important;
+    transition: all 1.25s ease;
+    filter: blur(0) !important;
+    filter: invert(0) !important;
+}
+
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transition: all 2.5s ease-in;
+    filter: invert(0) !important;
+}
+
+#s-introduction {
+    width: fit-content;
+    top: 95%;
+    left: 97%;
+    transform: translate(-97%, -95%);
+    position: fixed;
+    font-size: 10px;
+    opacity: 0;
+    filter: blur(4px);
+}
