@@ -1,4 +1,4 @@
-  // PureCounters 
+// PureCounters 
 
 // PC for visitors
 
@@ -78,3 +78,33 @@ new PureCounter({
   });
   
 // End PureCounters  
+
+// Observer
+
+/*
+
+const sections = document.querySelectorAll("section");
+
+const sectionsOptions = {
+    root: null,
+    threshold: 0.25
+};
+
+const sectionsObserver = new IntersectionObserver(function(
+    entries,
+    sectionsObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            sections.classList.toggle("show");
+            
+        } else {
+            sections.classList.remove("show");
+        }
+    });
+}, 
+sectionsOptions);
+  
+sectionsObserver.observe(sections);
+
+*/
+

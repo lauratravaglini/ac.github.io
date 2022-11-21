@@ -208,3 +208,9 @@ iframe {
     width: auto;
 }
 */
+
+.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transition: all 2.5s ease-in;
+}
