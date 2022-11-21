@@ -118,6 +118,7 @@ const moma = document.querySelector("#moma-left");
 const tate = document.querySelector("#tate-right");
 const scissor = document.querySelector("#big-scissor");
 const line = document.querySelector("#dott-line");
+const logo = document.querySelector("#intro-logo");
 
 const secId0 = document.querySelector("#s-introduction");
 
@@ -138,7 +139,7 @@ const sectionIntroObserver = new IntersectionObserver(function(
             tate.classList.toggle("tate-animated");
             scissor.classList.toggle("tiny-scissor");
             line.classList.toggle("dott-line-animated");
-            secId0.classList.toggle("show");      
+            secId0.classList.toggle("show");     
         } else {
             moma.classList.remove("moma-animated");
             tate.classList.remove("tate-animated");

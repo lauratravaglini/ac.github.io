@@ -9,6 +9,7 @@ body {
     background-color: white ;
     color: black;
     font-family: 'Sono', sans-serif;
+    font-weight: 200;
     font-size: 26px;
 }
 
@@ -223,42 +224,48 @@ section {
     font-size: 65px;
 }
 
-#sec4a {
+#sec4a, #sec5a {
     position: relative;
-    width: 50%;
-    left: 37.5%;
+    width: 100%;
+    left: 30%;
     bottom: 25%;
     text-align: center;
 }
 
 #sec4b {
     position: relative;
-    left: -5%;
+    left: -15%;
     bottom: 10%;
     font-size: 65px;
 }
 
-#sec4c {
+#sec5b {
     position: relative;
-    left: 15%;
+    left: -15%;
+    bottom: 10%;
+    font-size: 65px;
+}
+
+#sec4c, #sec5c  {
+    position: relative;
+    left: 2%;
     bottom: 5%;
     font-size: 65px;
 }
 
-#sec4d {
+#sec4d, #sec5d  {
     position: relative;
-    left: -42%;
-    bottom: -30%;
+    left: -44%;
+    bottom: -33%;
     font-size: 65px;
 }
 
-#sec4e {
+#sec4e, #sec5e {
     position: relative;
     left: -22%;
     bottom: -32%;
     font-size: 65px;
 }
-
 
 
 .from-left {
