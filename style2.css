@@ -17,6 +17,11 @@ h1 {
     font-family: 'Noto Serif Display', serif;
 }
 
+h2 {
+    font-family: 'Noto Serif Display', serif;
+   margin-bottom: 5%;
+}
+
 p {
     margin-bottom: 5%;
 }
@@ -24,8 +29,9 @@ p {
 #slider {
     display: flex;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
     height: 100vh;
 }
 
@@ -128,7 +134,9 @@ section {
 
 #container {
     scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
 }
 
@@ -303,3 +311,26 @@ section {
     opacity: 1;
     filter: blur(0);
   }
+
+
+#cloud_tate {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+#cloud_moma {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+#chartdiv {
+    width: 50%;
+    height: 400px
+}
+
+#map_moma {
+    width: 50%;
+    height: 400px
+}
