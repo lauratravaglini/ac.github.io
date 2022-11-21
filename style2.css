@@ -38,7 +38,6 @@ p {
 #background-video {
     position: absolute;
     width: 100%;
-    width: 100vw;
     height: 100vh;
     object-fit: cover;
     left: 0;
@@ -317,12 +316,14 @@ section {
     width: 100%;
     height: 450px;
     position: relative;
+    margin-bottom: 8%;
 }
 
 #cloud_moma {
     width: 100%;
     height: 450px;
     position: relative;
+    margin-bottom: 8%;
 }
 
 #chartdiv {
@@ -333,4 +334,15 @@ section {
 #map_moma {
     width: 50%;
     height: 400px
+}
+
+.viz {
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+.viz2 {
+    width: 65%;
+    position: relative;
+    margin-left: 20%;
 }
