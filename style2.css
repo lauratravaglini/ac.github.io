@@ -207,7 +207,7 @@ section {
     position: relative;
   }
   
-  .from-right {
+.from-right {
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     width: 35%;
@@ -216,18 +216,20 @@ section {
     position: relative;
   }
   
-  .from-left,
-  .from-right {
-    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in,
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in, filter 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in, filter 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in, filter 400ms ease-in,
       -webkit-transform 400ms ease-in;
     opacity: 0;
+    filter: blur(4px);
   }
   
-  .from-left.appear,
-  .from-right.appear {
+.from-left.appear,
+.from-right.appear {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+    filter: blur(0);
   }
