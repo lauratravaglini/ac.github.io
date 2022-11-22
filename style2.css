@@ -391,7 +391,7 @@ section {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-  }
+}
 
 #section9 p {
     position: absolute !important;
@@ -432,4 +432,9 @@ section {
     position: relative;
     margin-left: 20%;
     margin-bottom: 5%;
+}
+
+#conclusion {
+    background-color: black !important;
+    color: white !important;
 }
