@@ -216,16 +216,36 @@ section {
 #sec2b {
     position: relative;
     left: -30%;
-    bottom: 2%;
+    bottom: -1%;
     font-size: 65px;
 }
 
 #sec2c {
     position: relative;
     left: -10%;
-    bottom: 2%;
+    bottom: -1%;
     font-size: 65px;
 } 
+
+#section3 p {
+    margin-bottom: 25%;
+}
+
+#sec3a{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    width: 55%; 
+    height: auto; 
+}
+
+#sec3b {
+    position: absolute;
+    left: -12%;
+    top: 40%;
+    width: 60%; 
+    height: auto; 
+}
 
 .pc3, .pc4 {
     font-size: 65px;
