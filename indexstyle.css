@@ -55,6 +55,7 @@ nav ul {
         -ms-flex: 1;
             flex: 1;
     list-style: none;
+    text-transform: uppercase;
 }
 
 .logo {
