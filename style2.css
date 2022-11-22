@@ -385,21 +385,21 @@ section {
 .pc5 {
     position: absolute;
     font-size: 70px;
-    top: -58%;
-    left: 10%;
+    top: -80%;
+    left: 15%;
 }
 
 .pc6 {
     position: absolute;
     font-size: 70px;
-    top: -58%;
+    top: -80%;
     left: 50%;
 }
 
 #sec7b {
     position: absolute;
     left: 30%;
-    top: -46%;
+    top: -55%;
     width: 80%; 
     height: auto; 
     z-index: -1;
@@ -408,7 +408,7 @@ section {
 #sec7c {
     position: absolute;
     left: -10%;
-    top: -45%;
+    top: -52%;
     width: 80%; 
     height: auto; 
     z-index: -1;
