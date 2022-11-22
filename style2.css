@@ -308,20 +308,12 @@ section {
     font-size: 65px;
 }
 
-#sec5a {
-    position: relative;
-    width: 100%;
-    left: 30%;
-    bottom: 25%;
-    text-align: center;
-}
-
-#sec4a, #sec5a {
+#sec4a, #sec5a, #sec6a {
     position: absolute;
-    width: 20%;
-    top: 50%;
+    width: 100%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     text-align: center;
 }
 
