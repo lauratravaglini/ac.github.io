@@ -237,6 +237,7 @@ section {
     top: 40%;
     width: 55%; 
     height: auto; 
+    z-index: -1;
 }
 
 #sec3b {
@@ -245,6 +246,7 @@ section {
     top: 40%;
     width: 60%; 
     height: auto; 
+    z-index: -1;
 }
 
 .pc3, .pc4 {
