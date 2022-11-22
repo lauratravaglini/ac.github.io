@@ -11,15 +11,13 @@ a {
     text-decoration: none;
     color: white;
     padding-bottom: 10%;
-    text-decoration: underline;
+    text-decoration: underline dotted;
     text-underline-position: under;
 }
 
 a:hover {
-    text-decoration: none !important;
     display: inline;
-    background: linear-gradient(90deg, white 50%, transparent 0) 0 1.4em/10px 2px repeat-x;
-    text-shadow: 0.03em 0 black, -0.03em 0 black;
+    text-decoration: underline !important;
 }
 
 .nav-container {
@@ -146,11 +144,15 @@ h2 {
     top: 170% !important;
     left: 50% !important;
     transform: translate(-50%, -170%) !important;
-    text-decoration: underline;
+    text-decoration: underline dotted;
+    text-underline-position: under;
+    font-family: "Sono", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 #portal:hover {
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 /* team */
