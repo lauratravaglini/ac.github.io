@@ -3,7 +3,8 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  }
+}
+
 
 body {
     background-color: white ;
@@ -30,7 +31,105 @@ section {
     align-content: center;
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: start;
 }
+
+
+.slide {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   height: 100%; */
+    height: calc(100vh - var(--scrollbar-height));
+    min-width: 100vw;
+    scroll-snap-align: start;
+    z-index: 2;
+}
+
+#container {
+    display: flex;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+#slider {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+}
+
+.slide-text {
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+}
+
+#first {
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+}
+
+
+#arrow {
+    content: url(./img/futarrow.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatex(0px);
+    animation: float 2s ease-in-out infinite;
+    position: absolute;
+    left: 105%;
+    bottom: 10%;
+}
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-10px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+#arrow2 {
+    content: url(./img/futarrow2.png);
+    width: auto;
+    height: 8vh;
+    filter: invert(1);
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float2 2s ease-in-out infinite;
+    position: absolute;
+    left: 90%;
+    top: 85%;
+}
+
+
+/* Section-intro */
  
 #section-intro {
     background-color: black !important;
@@ -44,6 +143,7 @@ section {
     transform: translate(-50%, -50%);
     position: fixed;
     filter: invert(1);
+    opacity: 1;
 }
 
 .tiny-scissor {
@@ -70,6 +170,7 @@ section {
     transform: translate(-35%, -75%);
     position: fixed; /* da cambiare in fixed che poi sparirà opacity:0 */
     filter: invert(1);
+    opacity: 1;
 }
 
 .moma-animated {
@@ -79,6 +180,7 @@ section {
     transform: rotate(60deg) translate(-20%, -5%) !important;
     filter: invert(0) !important;
     transition: all 2s ease;
+    opacity: 1;
 }
 
 #tate-right {
@@ -89,6 +191,7 @@ section {
     transform: translate(-66%, -75%);
     position: fixed;
     filter: invert(1);
+    opacity: 1;
 }
 
 .tate-animated {
@@ -98,6 +201,7 @@ section {
     transform: rotate(300deg) translate(-75%, -13%) !important;
     filter: invert(0) !important;
     transition: all 2s ease;
+    opacity: 1;
 } 
 
 #dott-line {
@@ -150,8 +254,16 @@ section {
 .hidden {
     opacity: 0 !important;
     filter: blur(4px) !important;
+    transition: all 0.3s ease-out !important;
+    transform: scaleY(-100%) !important;
+}
+
+.hidden2 {
+    opacity: 0 !important;
+    filter: blur(4px) !important;
     transition: all 1s ease-out !important;
     transform: scaleY(-100%) !important;
+    position: absolute !important;
 }
 
 #s-introduction {
@@ -171,11 +283,26 @@ section {
     transition: all 2.5s ease-in;
 }
 
-/* section 2 */ 
-
-#section2 {
-    opacity: 0;
+.show2 {
+    transform: scaleY(-100%) !important;
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transition: all 2.5s ease-in;
+    position: fixed !important;
 }
+
+
+.people {
+    background-image: url("./img/people.png");
+    background-size: 70%;
+    background-position-y: 300px;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+/* section 2 */ 
 
 #moma-art {
     position: absolute;

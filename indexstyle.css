@@ -11,15 +11,13 @@ a {
     text-decoration: none;
     color: white;
     padding-bottom: 10%;
-    text-decoration: underline;
+    text-decoration: underline dotted;
     text-underline-position: under;
 }
 
 a:hover {
-    text-decoration: none !important;
     display: inline;
-    background: linear-gradient(90deg, white 50%, transparent 0) 0 1.2em/10px 2px repeat-x;
-    text-shadow: 0.03em 0 black, -0.03em 0 black;
+    text-decoration: underline !important;
 }
 
 .nav-container {
@@ -57,9 +55,8 @@ nav ul {
         -ms-flex: 1;
             flex: 1;
     list-style: none;
+    text-transform: uppercase;
 }
-
-
 
 .logo {
     -webkit-box-flex: 3;
@@ -92,7 +89,7 @@ section {
 h1 {
     font-family: 'Noto Serif Display', serif;
     color: white;
-    font-size: 100px;
+    font-size: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -122,7 +119,6 @@ p {
 
 h2 {
     font-family: 'Noto Serif Display', serif;
-    font-weight: 800;
     color: white;
     font-size: 40px;
     position: absolute;
@@ -141,21 +137,23 @@ h2 {
 
 #description p {
     position: relative;
-    text-align: left !important;
+    text-align: justify !important;
 }
 
 #portal {
     position: absolute !important;
-    font-size: 30px;
-    top: 160% !important;
+    top: 170% !important;
     left: 50% !important;
-    transform: translate(-50%, -160%) !important;
-    text-decoration: underline;
+    transform: translate(-50%, -170%) !important;
+    text-decoration: underline dotted;
     text-underline-position: under;
+    font-family: "Sono", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 #portal:hover {
-    text-decoration: none !important;
+    text-decoration: underline !important;
 }
 
 /* team */
@@ -171,6 +169,7 @@ h2 {
   
 .person {
     display:inline-block;
+    text-align: justify;
     width: 25%;
     height: 75%;
     margin-right: 40px;
@@ -184,7 +183,6 @@ h2 {
 .name {
   font-family: 'Noto Serif Display', serif;
   font-size: 22px;
-  font-weight: 800;
   margin:0;
   text-align: right;
 }
