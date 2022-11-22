@@ -296,10 +296,10 @@ section {
 
 #sec5b {
     position: relative;
-    width: 38%;
+    width: 36%;
     height: auto;
     left: 1%;
-    margin-top: 23%;
+    margin-top: 20%;
 
 }
 
@@ -313,7 +313,7 @@ section {
 
 #sec5d {
     position: relative;
-    width: 50%;
+    width: 45%;
     height: auto;
     left: 2%;
     margin-top: 1%;
@@ -323,10 +323,9 @@ section {
 #sec5e {
     position: absolute;
     font-size: 12px;
-    width: 10%;
-    top: 91%;
-    left: 92%;
-    transform: translate(-92%, -91%);
+    width: 14%;
+    top: 82%;
+    left: 82%;
     text-align: right;
 }
 
