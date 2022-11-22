@@ -22,6 +22,44 @@ h2 {
    margin-bottom: 5%;
 }
 
+h3 {
+    font-family: 'Sono', sans-serif;
+    font-weight:200;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.n-section {
+    position: absolute;
+    background-color: black;
+    top: 93%;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+}
+
+.arrow3 {
+    content: url(./img/futarrow.png);
+    width: auto;
+    height: 4vh;
+    filter: invert(1);
+    position: relative;
+    transform: rotate(180deg);
+    bottom: 10%;
+    margin-right: 5px;
+}
+
+.arrow4 {
+    content: url(./img/futarrow.png);
+    width: auto;
+    height: 4vh;
+    filter: invert(1);
+    position: relative;
+    margin-left: 5px;
+}
+
 p {
     margin-bottom: 5%;
 }
@@ -175,13 +213,30 @@ section {
     padding-top: 5%;
 }
 
-#section3, #section4, #section5, #section6, #section7, #section8, 
-#section9, #section10, #section11, #section12, #section13, #section14, 
-#section15, #section16, #section17, #section18, #section19 {
-    background-image: url(./img/bg2.png);
+#section3, #section4, #section5, #section6 {
+    background-image: url(./img/bg2-2.png);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y:bottom;
+    background-size: 110px;
+    padding-top: 5%;
+}
+
+#section7, #section8, #section9, #section10 {
+    background-image: url(./img/bg2-3.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 110px;
+    padding-top: 5%;
+}
+
+#section11, #section12, #section13, #section14, 
+#section15, #section16, #section17, #section18, #section19 {
+    background-image: url(./img/bg2-4.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
     background-size: 110px;
     padding-top: 5%;
 }
@@ -234,7 +289,7 @@ section {
 #sec3a{
     position: absolute;
     left: 55%;
-    top: 40%;
+    top: 32%;
     width: 55%; 
     height: auto; 
     z-index: -1;
@@ -243,7 +298,7 @@ section {
 #sec3b {
     position: absolute;
     left: -12%;
-    top: 40%;
+    top: 32%;
     width: 60%; 
     height: auto; 
     z-index: -1;
