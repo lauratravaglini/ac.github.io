@@ -308,7 +308,7 @@ section {
     font-size: 65px;
 }
 
-#sec4a, #sec5a, #sec6a {
+#sec4a, #sec5a, #sec6a, #sec7a {
     position: absolute;
     width: 100%;
     top: 10%;
@@ -316,6 +316,7 @@ section {
     transform: translate(-50%, -10%);
     text-align: center;
 }
+
 
 #sec4b {
     position: relative;
@@ -381,24 +382,34 @@ section {
     margin-bottom: 40%;
 }
 
-.pc5, .pc6 {
+.pc5 {
+    position: absolute;
     font-size: 70px;
+    top: -58%;
+    left: 10%;
 }
 
-#sec7a {
+.pc6 {
     position: absolute;
+    font-size: 70px;
+    top: -58%;
     left: 50%;
-    top: 20%;
-    width: 65%; 
-    height: auto; 
-    z-index: -1;
 }
 
 #sec7b {
     position: absolute;
-    left: -12%;
-    top: 20%;
-    width: 65%; 
+    left: 30%;
+    top: -46%;
+    width: 80%; 
+    height: auto; 
+    z-index: -1;
+}
+
+#sec7c {
+    position: absolute;
+    left: -10%;
+    top: -45%;
+    width: 80%; 
     height: auto; 
     z-index: -1;
 }
