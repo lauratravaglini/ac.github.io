@@ -253,7 +253,7 @@ section {
     font-size: 65px;
 }
 
-#sec4a, #sec5a {
+#sec5a {
     position: relative;
     width: 100%;
     left: 30%;
@@ -261,40 +261,75 @@ section {
     text-align: center;
 }
 
+#sec4a, #sec5a {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 #sec4b {
     position: relative;
-    left: -15%;
-    bottom: 10%;
-    font-size: 65px;
+    width: 38%;
+    height: auto;
+    left: -10%;
+}
+
+#sec4c {
+    position: relative;
+    width: 40%;
+    height: auto;
+    left: 103%;
+    margin-top: 20%;
+}
+
+#sec4d {
+    position: relative;
+    width: 72%;
+    height: auto;
+    left: 42%;
+    margin-top: -7%;
+
 }
 
 #sec5b {
     position: relative;
-    left: -15%;
-    bottom: 10%;
-    font-size: 65px;
+    width: 38%;
+    height: auto;
+    left: 1%;
+    margin-top: 23%;
+
 }
 
-#sec4c, #sec5c  {
+#sec5c {
     position: relative;
+    width: 75%;
+    height: auto;
+    right: 140%;
+    margin-top: -18%;
+}
+
+#sec5d {
+    position: relative;
+    width: 50%;
+    height: auto;
     left: 2%;
-    bottom: -3%;
-    font-size: 65px;
+    margin-top: 1%;
+
 }
 
-#sec4d, #sec5d  {
-    position: relative;
-    left: -44%;
-    bottom: -36%;
-    font-size: 65px;
+#sec5e {
+    position: absolute;
+    font-size: 12px;
+    width: 10%;
+    top: 91%;
+    left: 92%;
+    transform: translate(-92%, -91%);
+    text-align: right;
 }
 
-#sec4e, #sec5e {
-    position: relative;
-    left: -27%;
-    bottom: -37%;
-    font-size: 65px;
-}
 
 #section7 p {
     margin-bottom: 40%;
